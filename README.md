@@ -26,10 +26,6 @@
 | sleuth-server        |    9001    |  SpringCloud实现的一种分布式追踪解决方案，兼容Zipkin  |
 | zuul-server        |    9005    |  API网关模块  |
 | account-service        |    8080    |  用户服务，提供注册、登录、地址等服务  |
-| product-service       |    8081    |  商品服务，提供商品列表、详情、库存更新等服务  |
-| payment-service    |    8082    |  支付服务，支付记录  |
-| order-service        |    8083    |  订单服务，提供订单创建、详情、状态变更  |
-| msg-service        |    8084    |  消息处理服务  |
 | microservice-provider-weixin        |    8085    |  微信服务  |
 | microservice-consumer-weixin        |    8086    |  微信服务消费者  |
 | front-app        |    8088    |  前端服务，结合swagger2提供API管理(有小问题，swagger页面无法点击单个接口，可通过展开功能打开，待解决)  |
@@ -69,7 +65,3 @@
 - 2、完成SpringBootAdmin业务模块的运行监控，及Eureka服务运行，满足各业务基础服务的注册、发现功能
 - 3、可通过Front-app端，借助Feign组件发起login/signup等功能的 简单测试运行。
 - 下一版本，将基于此版本之上，继续完善完整的购物实现，包括简单的页面、api管理/调用等等。
-
-
-# 关注更多内容
-![image](https://github.com/backkoms/simplemall/blob/develop/getqrcode.jpeg?raw=true)
