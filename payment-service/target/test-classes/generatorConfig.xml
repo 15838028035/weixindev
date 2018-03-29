@@ -24,7 +24,7 @@
 			password="root" />
 
 		<!-- 生成持久化对象 -->
-		<javaModelGenerator targetPackage="com.simplemall.pay.bean"
+		<javaModelGenerator targetPackage="com.weixindev.pay.bean"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />

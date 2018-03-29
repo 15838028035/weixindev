@@ -1,4 +1,4 @@
-package com.simplemall.pay.service.impl;
+package com.weixindev.pay.service.impl;
 
 import java.math.BigDecimal;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.weixindev.micro.serv.common.constant.SystemConstants;
-import com.simplemall.pay.bean.PayRecord;
-import com.simplemall.pay.dal.PayRecordMapper;
-import com.simplemall.pay.service.IPayService;
+import com.weixindev.pay.bean.PayRecord;
+import com.weixindev.pay.dal.PayRecordMapper;
+import com.weixindev.pay.service.IPayService;
 
 @Service
 public class PayServiceImpl implements IPayService {

@@ -1,4 +1,4 @@
-package com.simplemall.pay.controller;
+package com.weixindev.pay.controller;
 
 import java.math.BigDecimal;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.simplemall.pay.service.IPayService;
+import com.weixindev.pay.service.IPayService;
 
 @RestController
 @RequestMapping("/payment")

@@ -1,4 +1,4 @@
-package com.weixindev.pay.config;
+package com.weixindev.account.config;
 
 import javax.sql.DataSource;
 
@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.TransactionManagementConfigure
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan("com.weixindev.pay.dal")
+@MapperScan("com.weixindev.account.dal")
 public class SqlSessionFactoryConfig implements TransactionManagementConfigurer {
 
     @Autowired

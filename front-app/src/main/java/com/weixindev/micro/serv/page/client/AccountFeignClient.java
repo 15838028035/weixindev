@@ -17,7 +17,6 @@ import com.weixindev.micro.serv.common.bean.account.Account;
  * TODO 可以从服务端定义一个接口层，服务实现层实现接口，调用方扩展此接口，即可完成接口定义的复用，而无须在此重新复制一次。
  * 但此举会导致服务端接口变动后，调用方就会直接受影响，建议事先约定好规则
  * 
- * @author guooo
  *
  */
 @FeignClient(name = "ACCOUNT-SERVICE")

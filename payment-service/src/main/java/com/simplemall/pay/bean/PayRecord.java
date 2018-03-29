@@ -1,4 +1,4 @@
-package com.simplemall.pay.bean;
+package com.weixindev.pay.bean;
 
 import java.util.Date;
 

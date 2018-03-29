@@ -1,14 +1,14 @@
-package com.weixindev.pay;
+package com.weixindev.micro.serv.msg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
 @EnableDiscoveryClient
-public class PaymentServApplication {
+@SpringBootApplication
+public class WeixinServApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PaymentServApplication.class, args);
+		SpringApplication.run(WeixinServApplication.class, args);
 	}
 }

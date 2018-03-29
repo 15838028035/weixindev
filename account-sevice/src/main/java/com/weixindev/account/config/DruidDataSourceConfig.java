@@ -1,4 +1,4 @@
-package com.weixindev.pay.config;
+package com.weixindev.account.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.slf4j.Logger;

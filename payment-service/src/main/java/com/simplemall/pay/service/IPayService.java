@@ -1,4 +1,4 @@
-package com.simplemall.pay.service;
+package com.weixindev.pay.service;
 
 import java.math.BigDecimal;
 

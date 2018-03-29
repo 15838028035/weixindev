@@ -7,8 +7,6 @@ import de.codecentric.boot.admin.config.EnableAdminServer;
 
 /**
  * 入口方法
- * 
- * @author guooo
  *
  */
 @SpringBootApplication
