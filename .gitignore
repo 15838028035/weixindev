@@ -1,0 +1,17 @@
+*.class
+*.classpath
+*.project
+*.war
+*.lib
+*.jar
+target/*
+target
+WEB-INF/classes/*
+*.log
+*.classpath
+.settings/
+
+log.text
+log.txt
+/bin/
+
