@@ -31,7 +31,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableDiscoveryClient
 public class ConfigServerApplication {
 	 
-	// FIXME encrypt配置文件
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigServerApplication.class, args);
 		//new SpringApplicationBuilder(ConfigServerApplication.class).web(true).run(args);
