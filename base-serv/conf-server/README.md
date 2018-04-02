@@ -1,9 +1,32 @@
-#ReadMe
-	1、config-client项目的pom中加入spring-boot-starter-actuator，依赖其监控机制，来刷新config-server中配置的变化，config-client客户端中增加@RefreshScope，来手动修正配置荐的变化。但不能有效的将config-server中变化的信息实时的更新到客户端，是个弊端。
-	
-	2、引入bus来修复上一阶段产生的不能实时更新消息的bug
-	
-	
-	http://www.cnblogs.com/unqiang/p/5166770.html kafaka setup documents
-##其它组件
-百度的Disconf，360的QConf，taobao的Diamond，自己能过zookeeper实现的配置中心
+
+#配置管理开发工具包
+整合spring cloud Bus 事件消息总线用于集群（例如：配置变化时间）中传播状态变化，与spring cloud config 联合实现热部署
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
+
+/**
+ * 通过@EnableConfigServer注解激活配置服务.
+ * 说明：
+ * 在application.properties中有个git.uri的配置，目前配置的是https://github.com/15838028035/weixindev/
+ * 获取git上的资源信息遵循如下规则：
+ * /{application}/{profile}[/{label}]
+ * /{application}-{profile}.yml
+ * /{label}/{application}-{profile}.yml
+ * /{application}-{profile}.properties
+ * /{label}/{application}-{profile}.properties
+ *
+ * 例如本例：可使用以下路径来访问microservice-config-client-dev.properties：
+ * http://localhost:8040/microservice-config-client-dev.properties
+ * http://localhost:8040/mhttps://github.com/15838028035/weixindev/icroservice-config-client/dev
+ * ...
+ */
+@SpringBootApplication
+@EnableConfigServer
+public class ConfigServerApplication {
+  public static void main(String[] args) {
+    SpringApplication.run(ConfigServerApplication.class, args);
+  }
+}
