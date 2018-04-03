@@ -6,11 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * API Gateway
- * TODO 与zuul实现同样的功能还有kong，官网地址：https://getkong.org
- * 
- * @author guooo
- *
+ * 使用@EnableZuulProxy注解激活zuul。
+ * 跟进该注解可以看到该注解整合了@EnableCircuitBreaker、@EnableDiscoveryClient，是个组合注解，目的是简化配置。
  */
 @EnableZuulProxy
 @EnableDiscoveryClient
